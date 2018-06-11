@@ -9,6 +9,6 @@ class Transfer
   end
 
   def valid?
-    binding.pry
+    self.receiver.valid? && self.sender.valid?
   end
 end
