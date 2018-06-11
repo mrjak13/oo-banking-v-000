@@ -17,6 +17,6 @@ class Transfer
     receiver.balance = receiver.balance + amount
     self.status = "complete"
     binding.pry
-    self.status == "complete" ?
+    # self.status == "complete" ?
   end
 end
