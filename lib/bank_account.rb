@@ -18,4 +18,9 @@ class BankAccount
     "Your balance is $#{balance}."
   end
 
+  def valid?
+    binding.pry
+    
+  end
+
 end
