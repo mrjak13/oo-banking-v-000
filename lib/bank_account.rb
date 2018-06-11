@@ -10,8 +10,8 @@ class BankAccount
   end
 
   def deposit(money)
-    binding.pry
-    balance + money
+    new_balance = balance + money
+    balance = new_balance
 
   end
 
