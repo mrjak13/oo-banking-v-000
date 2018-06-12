@@ -21,7 +21,6 @@ class Transfer
     elsif sender.valid? == false
       self.status = "rejected"
     end
-    "Transaction rejected. Please check your account balance."
   end
 
   def reverse_transfer
