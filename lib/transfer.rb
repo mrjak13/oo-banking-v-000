@@ -21,6 +21,7 @@ class Transfer
     elsif status == "complete" || sender.valid? == false
       "Transaction rejected. Please check your account balance."
       self.status = "rejected"
+      binding.pry
     end
     # binding.pry
   end
