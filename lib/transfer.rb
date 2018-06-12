@@ -23,6 +23,7 @@ class Transfer
       self.status = "rejected"
       # binding.pry
     end
+    self.status
   end
 
   def reverse_transfer
