@@ -36,4 +36,3 @@ class Transfer
     self.status
   end
 end
-  
