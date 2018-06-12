@@ -19,8 +19,9 @@ class Transfer
       receiver.balance = receiver.balance + amount
       self.status = "complete"
     else self.status == "complete" && sender.valid? == false
+      "Transaction rejected. Please check your account balance."
       self.status = "rejected"
-      binding.pry
+      # binding.pry
     end
   end
 
