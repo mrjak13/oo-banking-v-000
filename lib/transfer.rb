@@ -17,10 +17,10 @@ class Transfer
     if status == "pending" && sender.valid? == true
       sender.balance = sender.balance - amount
       receiver.balance = receiver.balance + amount
-      self.status = "complete"
+      status = "complete"
     else
       "Transaction rejected. Please check your account balance."
-      self.status = "rejected"
+      status = "rejected"
     end
     # binding.pry
   end
