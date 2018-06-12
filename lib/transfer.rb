@@ -21,6 +21,7 @@ class Transfer
     elsif sender.valid? == false
       self.status = "rejected"
     end
+    binding.pry
   end
 
   def reverse_transfer
