@@ -23,7 +23,7 @@ class Transfer
       # binding.pry
     end
     if status == "rejected"
-      "Transaction rejected. Please check your account balance."
+      puts "Transaction rejected. Please check your account balance."
     end
     # binding.pry
   end
