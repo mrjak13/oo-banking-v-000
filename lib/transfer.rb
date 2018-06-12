@@ -13,7 +13,7 @@ class Transfer
   end
 
   def execute_transaction
-    # binding.pry
+    binding.pry
     if self.status != "complete"
       sender.balance = sender.balance - amount
       receiver.balance = receiver.balance + amount
@@ -26,7 +26,6 @@ class Transfer
   end
 
   def reverse_transfer
-    # binding.pry
     if self.status == "complete"
       sender.balance = sender.balance + amount
       receiver.balance = receiver.balance - amount
