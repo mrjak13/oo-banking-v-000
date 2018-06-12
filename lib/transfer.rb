@@ -20,7 +20,7 @@ class Transfer
       self.status = "complete"
     else
       "Transaction rejected. Please check your account balance."
-      status = "rejected"
+      self.status = "rejected"
     end
     # binding.pry
   end
