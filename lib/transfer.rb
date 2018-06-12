@@ -18,10 +18,11 @@ class Transfer
       receiver.balance = receiver.balance + amount
       self.status = "complete"
     elsif status == "complete" || sender.valid? == false
-      puts "Transaction rejected. Please check your account balance."
+      
       self.status = "rejected"
       binding.pry
     end
+    puts "Transaction rejected. Please check your account balance."
   end
 
   def reverse_transfer
