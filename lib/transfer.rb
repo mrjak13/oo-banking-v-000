@@ -22,7 +22,7 @@ class Transfer
       self.status = "rejected"
       binding.pry
     end
-    puts "Transaction rejected. Please check your account balance."
+    "Transaction rejected. Please check your account balance."
   end
 
   def reverse_transfer
