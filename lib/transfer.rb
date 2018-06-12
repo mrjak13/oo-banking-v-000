@@ -17,7 +17,7 @@ class Transfer
     if status == "pending" && sender.valid? == true
       sender.balance = sender.balance - amount
       receiver.balance = receiver.balance + amount
-      status = "complete"
+      self.status = "complete"
     else
       "Transaction rejected. Please check your account balance."
       status = "rejected"
